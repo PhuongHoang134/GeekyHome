@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeekyHome</title>
+  <link id="pagestyle" rel="stylesheet" href="light.css">
+  <script type="application/javascript" src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="book-body">
+  <nav class="navbar">
+    <label class="logo">GeekyHome</label>
+    <ul class="menu">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="books.html">All Books</a></li>
+      <li><a href="rating.php">Books Rating</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <main class="table">
+        <section class="table-header">
+            <h1>All Books</h1>
+        </section>
+        <section class="table-body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Book</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Published Year</th>
+                        <th>Edition</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="num">1</td>
+                        <td><a href="jss.html"><img src="Java-Software-Solutions.jpg" alt="JSS-cover"></a></td>
+                        <td>Java Software Solutions</td>
+                        <td>John Lewis, William Loftus</td>
+                        <td class="num">2008</td>
+                        <td>6th Edition</td>
+                    </tr>
+                    <tr>
+                        <td class="num">2</td>
+                        <td><a href="www.html"><img src="Internet-and-WWW.jpg" alt="I&WWWW-cover"></a></td>
+                        <td>Internet & World Wide Web How To Program</td>
+                        <td>Paul Deitel, Harvey Deitel, Abbey Deitel</td>
+                        <td class="num">2007</td>
+                        <td>4th Edition</td>
+                    </tr>
+                    <tr>
+                        <td class="num">3</td>
+                        <td><a href="math.html"><img src="Mathematics.jpg" alt="Mathematics-cover"></a></td>
+                        <td>Mathematics: A Complete Introduction</td>
+                        <td>Hugh Neill, Trevor Johnson</td>
+                        <td class="num">2018</td>
+                        <td>1st Edition</td>
+                    </tr>
+                    <tr>
+                        <td class="num">4</td>
+                        <td><a href="jss.html"><img src="Java-Software-Solutions.jpg" alt="JSS-cover"></a></td>
+                        <td>Java Software Solutions</td>
+                        <td>John Lewis, William Loftus</td>
+                        <td class="num">2008</td>
+                        <td>6th Edition</td>
+                    </tr>
+                    <tr>
+                        <td class="num">5</td>
+                        <td><a href="www.html"><img src="Internet-and-WWW.jpg" alt="I&WWWW-cover"></a></td>
+                        <td>Internet & World Wide Web How To Program</td>
+                        <td>Paul Deitel, Harvey Deitel, Abbey Deitel</td>
+                        <td class="num">2007</td>
+                        <td>4th Edition</td>
+                    </tr>
+                    <tr>
+                        <td class="num">6</td>
+                        <td><a href="math.html"><img src="Mathematics.jpg" alt="Mathematics-cover"></a></td>
+                        <td>Mathematics: A Complete Introduction</td>
+                        <td>Hugh Neill, Trevor Johnson</td>
+                        <td class="num">2018</td>
+                        <td>1st Edition</td>
+                    </tr>
+                    <tr>
+                        <td class="num">7</td>
+                        <td><a href="jss.html"><img src="Java-Software-Solutions.jpg" alt="JSS-cover"></a></td>
+                        <td>Java Software Solutions</td>
+                        <td>John Lewis, William Loftus</td>
+                        <td class="num">2008</td>
+                        <td>6th Edition</td>
+                    </tr>
+                    <tr>
+                        <td class="num">8</td>
+                        <td><a href="www.html"><img src="Internet-and-WWW.jpg" alt="I&WWWW-cover"></a></td>
+                        <td>Internet & World Wide Web How To Program</td>
+                        <td>Paul Deitel, Harvey Deitel, Abbey Deitel</td>
+                        <td class="num">2007</td>
+                        <td>4th Edition</td>
+                    </tr>
+                    <tr>
+                        <td class="num">9</td>
+                        <td><a href="math.html"><img src="Mathematics.jpg" alt="Mathematics-cover"></a></td>
+                        <td>Mathematics: A Complete Introduction</td>
+                        <td>Hugh Neill, Trevor Johnson</td>
+                        <td class="num">2018</td>
+                        <td>1st Edition</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+  </main>
+</body>
+<script>
+    // Function to toggle styles
+    function toggleStyles() {
+      var style1 = document.getElementById('style-link');
+      var style2 = document.getElementById('style2-link');
+
+      if (style1.disabled) {
+        style1.disabled = false;
+        style2.disabled = true;
+        // Save style preference to localStorage
+        localStorage.setItem('preferredStyle', 'style1.css');
+      } else {
+        style1.disabled = true;
+        style2.disabled = false;
+        // Save style preference to localStorage
+        localStorage.setItem('preferredStyle', 'style2.css');
+      }
+    }
+
+    // Check for saved style preference in localStorage
+    var preferredStyle = localStorage.getItem('preferredStyle');
+    if (preferredStyle) {
+      // Enable the preferred style
+      document.getElementById(preferredStyle).disabled = false;
+      // Disable the other style
+      document.getElementById(preferredStyle === 'style1.css' ? 'style2-link' : 'style-link').disabled = true;
+    }
+  </script>
+</html>

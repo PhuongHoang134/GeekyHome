@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeekyHome</title>
+  <link id="pagestyle" rel="stylesheet" href="light.css">
+  <script type="application/javascript" src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <label class="logo">GeekyHome</label>
+    <ul class="menu">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="books.html">All Books</a></li>
+      <li><a href="rating.php">Books Rating</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><button class="one" onclick="swapStyleSheet('light.css')">Light Mode</button></li>
+      <li><button class="two" onclick="swapStyleSheet('dark.css')">Dark Mode</button></li>
+    </ul>
+  </nav>
+  <div class = "cover">
+    <div class="cover-container">
+      <div class = "welcome-content">
+        <h1>Welcome Home, Geeky Homies!</h1>
+        <p>Your online IT resources</p>
+        <a href="#container">
+          <button>Popular Books</button>
+        </a>
+      </div>
+      <div class = "welcome-photo">
+        <img src="cover.png" alt="cover-img" class="cover-image"/>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="container">
+    <div class="popular">
+      <h1>Popular Books for Geeky Homies</h1>
+    </div>
+    <div class="card-container">
+      <article class="card-article">
+        <img src="Java-Software-Solutions.jpg" alt="Java Software Solutions
+        cover" class="card-img">
+        <div class="card-data">
+          <h2 class="card-title">Java Software Solutions</h2>
+          <span class="card-description">Java Software Solutions establishes
+            a strong foundation of programming techniques to foster
+            well-designed object-oriented software.</span>
+          <a href="jss.html" class="card-button">Read More</a>
+        </div>
+      </article>
+
+      <article class="card-article">
+        <img src="Internet-and-WWW.jpg" alt="Internet and World Wide Web:
+        How To Program cover" class="card-img">
+        <div class="card-data">
+          <h2 class="card-title">Internet & World Wide Web: How To Program</h2>
+          <span class="card-description">Internet & World Wide Web: How to
+            Program, provides a clear, simple, engaging and entertaining
+            introduction to Internet and web programming.</span>
+          <a href="www.html" class="card-button">Read More</a>
+        </div>
+      </article>
+
+      <article class="card-article">
+        <img src="Mathematics.jpg" alt="Mathematics A Complete Introduction
+        cover" class="card-img">
+        <div class="card-data">
+          <h2 class="card-title">Mathematics: A Complete Introduction</h2>
+          <span class="card-description"> A complete introduction aims to give
+            you a broad mathematical experience and a firm foundation for
+            further study.</span>
+          <a href="math.html" class="card-button">Read More</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</body>
+
+</html>
