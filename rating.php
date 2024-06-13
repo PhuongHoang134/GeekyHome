@@ -34,9 +34,9 @@
             <?php
             // Connect to your MySQL database
             $servername = "localhost";
-            $username = "22075125"; //22075125
-            $password = "mydb22075125"; //mydb22075125
-            $dbname = "db_22075125"; //db_22075125
+            $username = "root";
+            $password = "";
+            $dbname = "bookreview";
 
             $conn = new mysqli($servername, $username, $password, $dbname);
             if ($conn->connect_error) {
